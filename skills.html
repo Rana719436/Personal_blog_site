@@ -1,0 +1,78 @@
+<html>
+<head>
+    <title>قوائم مرتبة وغير مرتبة</title>
+    <style>
+        ul, ol {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        li {
+            margin-bottom: 10px; 
+        }
+
+        .list-container {
+            display: flex;
+        }
+
+        .list-container div {
+            flex: 1;
+            padding: 0 10px;
+        }
+
+        .red-text {
+            color: red; 
+            font-size: 30px; 
+        }
+
+        .blue-text {
+            color: blue; 
+            font-size: 30px; 
+        }
+
+        .green-text {
+            color: green; 
+            font-size: 30px; 
+        }
+
+        .image-container {
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="list-container">
+        <div>
+            <h2 class="red-text">Skills that I can use from Adobe:</h2>
+            <ul>
+                <li>1 Photoshop</li>
+                <li>2 Illustrator</li>
+                <li>3 After effects</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2 class="green-text">Skills that I can use in Office programs:</h2>
+            <ol>
+                <li>1 Word</li>
+                <li>2 Excel</li>
+                <li>3 Power Point</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <h2 class="blue-text">Some company pictures:</h2>
+        <img src="22.png" alt="Image 1" height="200"   width="500">
+        <img src="33.jpg" alt="Image 2">
+    </div>
+</body>
+</html>
