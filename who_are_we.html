@@ -1,6 +1,12 @@
-<html>
+<html lang="en">
 <head>
     <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
         .banner {
             width: 100%;
             background-color: #3498db;
@@ -11,65 +17,93 @@
 
         .gallery {
             display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
+            justify-content: space-around;
+            margin: 20px auto;
+            max-width: 800px;
         }
 
         .gallery img {
-            width: 100%;
+            max-width: 100%;
             height: auto;
+            border: 1px solid #ccc;
         }
-        .audio-player {
-            margin-top: 10px;
-        }
-.gallery figcaption {
-    font-size: 20px; 
-    color: black;      
-}
-.audio-caption {
-    font-size: 30px;
-    color: #fff;    
 
-        .video-text {
+        .audio-player {
+            margin: 20px auto;
+            max-width: 300px;
             text-align: center;
         }
+
+        .audio-caption {
+            font-size: 24px;
+            color: #3498db;
+            margin-top: 10px;
+        }
+
+        .video-player {
+            margin: 60px auto;
+            max-width: 800px;
+            text-align: center;
+        }
+
         .video-text p {
-            font-size: 20px;
+            font-size: 18px;
             color: #333;
+        }
+
+        footer {
+            background-color: #333;
+            padding: 10px;
+            color: white;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <div class="banner">
-        <h1>Welcome to my distinguished website</h1>
-        <p>It is my own website that displays information about my work</p>
-        <div class="gallery">
-          <figure>
-                <img src="23.jpg" alt="برمجة">
-                <figcaption>Programming</figcaption>
-            </figure>
-            <figure>
-                <img src="25.png" alt="صورة 2">
-                <figcaption>Web Design</figcaption>
-            </figure>
-            <figure>
-                <img src="24.jpeg" alt="جرافيك دايزين">
-                <figcaption>Graphic Design</figcaption>
-            </figure>
-        </div>
-        <div class="audio-player">
-<p class="audio-caption">Introductory video and audio</p>
-            <audio controls>
-                <source src="Recording (3).m4a" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-        </div>
-        <div class="video-player">
-            <video controls>
-                <source src="xxxxx.mp4" type="video/mp4">
-                Your browser does not support the video element.
-            </video>
-        </div>
+<table width="100%">
+    <tr>
+        <td><font color="white" size="15"><a href="main.html">Main</a></font></td> 
+        <td><font color="black" size="15"><a href="Skills.html">Skills</a></font></td>
+        <td><font color="white" size="15"><a href="who_are_we.html">Who are we</a></font></td>
+        <td><font color="white" size="15"><a href="Call_me.html">Call me</a></font></td> 
+    </tr>
+</table>
+<div class="banner">
+    <h1>Welcome to my distinguished website</h1>
+    <p>It is my own website that displays information about my work</p>
+</div>
+<div class="gallery">
+    <figure>
+        <img src="23.jpg" alt="برمجة">
+        <figcaption>Programming</figcaption>
+    </figure>
+    <figure>
+        <img src="25.png" alt="صورة 2">
+        <figcaption>Web Design</figcaption>
+    </figure>
+    <figure>
+        <img src="24.jpeg" alt="جرافيك دايزين">
+        <figcaption>Graphic Design</figcaption>
+    </figure>
+</div>
+<div class="audio-player">
+    <p class="audio-caption">Introductory video and audio</p>
+    <audio controls>
+        <source src="Recording (3).m4a" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</div>
+<div class="video-player">
+    <video controls>
+        <source src="xxxxx.mp4" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+    <div class="video-text">
+        <p>This is a sample video description.</p>
     </div>
+</div>
+<footer>
+    <p>حقوق النشر © 2023</p>
+</footer>
 </body>
 </html>
